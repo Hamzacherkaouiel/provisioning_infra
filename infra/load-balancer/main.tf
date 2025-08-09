@@ -11,7 +11,7 @@ variable "lb_listner_protocol" {}
 variable "lb_listner_default_action" {}
 variable "lb_https_listner_port" {}
 variable "lb_https_listner_protocol" {}
-variable "dev_proj_1_acm_arn" {}
+//variable "dev_proj_1_acm_arn" {}
 variable "lb_target_group_attachment_port" {}
 
 output "aws_lb_dns_name" {
@@ -55,7 +55,7 @@ resource "aws_lb_listener" "dev_proj_1_lb_listner" {
 }
 
 # https listner on port 443
-resource "aws_lb_listener" "dev_proj_1_lb_https_listner" {
+/*resource "aws_lb_listener" "dev_proj_1_lb_https_listner" {
   load_balancer_arn = aws_lb.dev_proj_1_lb.arn
   port              = var.lb_https_listner_port
   protocol          = var.lb_https_listner_protocol
@@ -66,4 +66,4 @@ resource "aws_lb_listener" "dev_proj_1_lb_https_listner" {
     type             = var.lb_listner_default_action
     target_group_arn = var.lb_target_group_arn
   }
-}
+}*/

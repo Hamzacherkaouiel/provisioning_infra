@@ -1,7 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "dev-proj-1-remote-state-bucket-123456"
-    key    = "devops-project-1/terraform.tfstate"
-    region = "eu-central-1"
+    bucket = "bucket.devops1"
+    key = "web-app/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "devops"
+    encrypt        = true
   }
 }
