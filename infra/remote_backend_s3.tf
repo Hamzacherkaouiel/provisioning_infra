@@ -3,7 +3,7 @@ terraform {
     bucket = "bucket.devops2"
     key = "web-app/terraform.tfstate"
     region         = "us-west-1"
-    dynamodb_table = "devops2"
+    dynamodb_table = "devops3"
     encrypt        = true
   }
   required_providers {
