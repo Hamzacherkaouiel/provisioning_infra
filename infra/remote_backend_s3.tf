@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "bucket.devops1"
+    bucket = "bucket.devops2"
     key = "web-app/terraform.tfstate"
     region         = "us-west-1"
     dynamodb_table = "devops2"
